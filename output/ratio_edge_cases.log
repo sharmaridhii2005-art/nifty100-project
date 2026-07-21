@@ -1,0 +1,96 @@
+import sqlite3
+import os
+import logging
+conn = sqlite3.connect(DB_PATH)
+cursor = conn.cursor()
+# ----------------------------------------------------
+# Logging
+# ----------------------------------------------------
+
+OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+logging.basicConfig(
+    filename=os.path.join(OUTPUT_DIR, "ratio_edge_cases.log"),
+    level=logging.INFO,
+    format="%(asctime)s - %(message)s"
+)
+if sales is None:
+    logging.info(
+        f"{company_id} {year} : Sales is NULL"
+    )
+
+if operating_profit is None:
+    logging.info(
+        f"{company_id} {year} : Operating Profit is NULL"
+    )
+
+if equity_capital is None:
+    logging.info(
+        f"{company_id} {year} : Equity Capital is NULL"
+    )
+
+if total_assets is None:
+    logging.info(
+        f"{company_id} {year} : Total Assets is NULL"
+    )2026-07-20 21:52:52,497 - PNB Mar 2013: Operating Profit is NULL
+2026-07-20 21:52:52,498 - PNB Mar 2013: Operating Profit is NULL
+2026-07-20 21:52:52,498 - PNB Mar 2013: Operating Profit is NULL
+2026-07-20 21:52:52,498 - PNB Mar 2013: Operating Profit is NULL
+2026-07-20 21:52:52,498 - PNB Mar 2013: Operating Profit is NULL
+2026-07-20 21:52:52,498 - PNB Mar 2014: Operating Profit is NULL
+2026-07-20 21:52:52,498 - PNB Mar 2014: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2014: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2014: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2014: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2015: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2015: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2015: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2015: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2015: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2016: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2016: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2016: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2016: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2016: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2017: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2017: Operating Profit is NULL
+2026-07-20 21:52:52,499 - PNB Mar 2017: Operating Profit is NULL
+2026-07-20 21:52:52,500 - PNB Mar 2017: Operating Profit is NULL
+2026-07-20 21:52:52,500 - PNB Mar 2017: Operating Profit is NULL
+2026-07-20 21:52:52,500 - PNB Mar 2018: Operating Profit is NULL
+2026-07-20 21:52:52,500 - PNB Mar 2018: Operating Profit is NULL
+2026-07-20 21:52:52,500 - PNB Mar 2018: Operating Profit is NULL
+2026-07-20 21:52:52,500 - PNB Mar 2018: Operating Profit is NULL
+2026-07-20 21:52:52,500 - PNB Mar 2018: Operating Profit is NULL
+2026-07-20 21:52:52,500 - PNB Mar 2019: Operating Profit is NULL
+2026-07-20 21:52:52,500 - PNB Mar 2019: Operating Profit is NULL
+2026-07-20 21:52:52,500 - PNB Mar 2019: Operating Profit is NULL
+2026-07-20 21:52:52,500 - PNB Mar 2019: Operating Profit is NULL
+2026-07-20 21:52:52,500 - PNB Mar 2019: Operating Profit is NULL
+2026-07-20 21:52:52,501 - PNB Mar 2020: Operating Profit is NULL
+2026-07-20 21:52:52,501 - PNB Mar 2020: Operating Profit is NULL
+2026-07-20 21:52:52,501 - PNB Mar 2020: Operating Profit is NULL
+2026-07-20 21:52:52,501 - PNB Mar 2020: Operating Profit is NULL
+2026-07-20 21:52:52,501 - PNB Mar 2020: Operating Profit is NULL
+2026-07-20 21:52:52,501 - PNB Mar 2021: Operating Profit is NULL
+2026-07-20 21:52:52,501 - PNB Mar 2021: Operating Profit is NULL
+2026-07-20 21:52:52,501 - PNB Mar 2021: Operating Profit is NULL
+2026-07-20 21:52:52,501 - PNB Mar 2021: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2021: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2022: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2022: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2022: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2022: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2022: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2023: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2023: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2023: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2023: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2023: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2024: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2024: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2024: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2024: Operating Profit is NULL
+2026-07-20 21:52:52,502 - PNB Mar 2024: Operating Profit is NULL
