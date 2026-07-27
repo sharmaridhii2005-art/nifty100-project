@@ -39,22 +39,29 @@ def cfo_quality_score(cfo, pat):
         return "Accrual Risk"
 
 
-def capex_intensity(capex, revenue):
+def capex_intensity(investing_activity, sales):
+    """
+    Capex Intensity = |Investing Cash Flow| / Sales * 100
 
-    if revenue == 0:
-        return 0, "Unknown"
+    Returns:
+        (value, label)
+    """
 
-    value = (abs(capex) / revenue) * 100
+    if investing_activity is None or sales is None or sales == 0:
+        return None, "N/A"
 
-    if value < 5:
-        label = "Low"
-    elif value <= 15:
-        label = "Moderate"
-    else:
+    value = (abs(investing_activity) / sales) * 100
+
+    if value >= 10:
         label = "High"
 
-    return value, label
+    elif value >= 5:
+        label = "Moderate"
 
+    else:
+        label = "Low"
+
+    return round(value, 2), label
 
 def fcf_conversion_rate(free_cash_flow_value, operating_profit):
     """
